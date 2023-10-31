@@ -38,7 +38,7 @@ class _PortfolioLayoutState extends State<PortfolioLayout> {
 
   void scrolToTap(double index) {
     if (index == 3) {
-      scrollController.animateTo(index * 1350,
+      scrollController.animateTo(index * 1500,
           duration: const Duration(milliseconds: 500),
           curve: Curves.decelerate);
     } else {
@@ -53,8 +53,8 @@ class _PortfolioLayoutState extends State<PortfolioLayout> {
     double index = 0;
 
     for (double i = 0; i < listIcons.length; i++) {
-      double startOffset = i * (i == 3 ? 1333.33 : 1000.0);
-      double endOffset = (i + 1) * (i == 2 || i == 3 ? 1333.33 : 1000.0);
+      double startOffset = i * (i == 3 ? 1500 : 1000.0);
+      double endOffset = (i + 1) * (i == 2 || i == 3 ? 1500 : 1000.0);
 
       if (scrollOffset >= startOffset && scrollOffset < endOffset) {
         index = i;

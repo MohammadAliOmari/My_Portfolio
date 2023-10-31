@@ -14,19 +14,21 @@ class ProjectPage extends StatelessWidget {
     final List<String> texts = [
       'Graduation project management system',
       'QUIZ App',
+      'Weather App',
       'Todo List',
       'Bmi Calculator',
     ];
     final List<AssetImage> images = [
       const AssetImage('assets/images/project_manager.jpg'),
       const AssetImage('assets/images/quiz_app.jpg'),
+      const AssetImage('assets/images/Weather App.jpg'),
       const AssetImage('assets/images/todo_lists.jpg'),
       const AssetImage('assets/images/bmi_calc.jpg'),
     ];
     final double width = MediaQuery.of(context).size.width;
     final bool isWeb = width > 640;
     return SizedBox(
-      height: 2000,
+      height: 2500,
       child: Scaffold(
           backgroundColor: ColorsManager.grey.withOpacity(0),
           body: Padding(
@@ -54,6 +56,7 @@ class ProjectPage extends StatelessWidget {
                       ProjectCard(index: 1, text: texts[1], image: images[1]),
                       ProjectCard(index: 2, text: texts[2], image: images[2]),
                       ProjectCard(index: 3, text: texts[3], image: images[3]),
+                      ProjectCard(index: 4, text: texts[4], image: images[4]),
                     ],
                   ),
                 ),
