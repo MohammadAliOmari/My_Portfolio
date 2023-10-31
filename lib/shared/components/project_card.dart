@@ -30,7 +30,7 @@ class ProjectCard extends StatelessWidget {
     List<Uri> demoList = [
       Uri.parse('https://github.com/MohammadAliOmari/project-manager'),
       Uri.parse('https://moquizapp.netlify.app/'),
-      Uri.parse('https://github.com/MohammadAliOmari/Weather-App'),
+      Uri.parse('https://moh-weatherapp.netlify.app'),
       Uri.parse('https://mohamadtodolist.netlify.app'),
       Uri.parse('https://bmiclac.netlify.app'),
     ];
