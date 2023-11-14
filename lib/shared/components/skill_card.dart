@@ -52,9 +52,8 @@ class _HoverSkillCardItemState extends State<HoverSkillCardItem> {
                 ])
               : null,
           border: Border.all(
-            width: isHovered == false ? 4 : 2,
-            color:
-                isHovered == false ? ColorsManager.blue : ColorsManager.white,
+            width: !isHovered ? 4 : 2,
+            color: !isHovered ? ColorsManager.blue : ColorsManager.white,
           ),
         ),
         child: Row(

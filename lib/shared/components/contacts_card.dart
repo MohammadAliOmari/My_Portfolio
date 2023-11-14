@@ -7,13 +7,11 @@ import '../constants/values.dart';
 
 class HoverContactsCardItem extends StatefulWidget {
   final String contactName;
-  final BuildContext context;
   final AssetImage img;
   final int index;
 
   const HoverContactsCardItem(
       {super.key,
-      required this.context,
       required this.index,
       required this.img,
       required this.contactName});
@@ -77,9 +75,8 @@ class _HoverContactsCardItemState extends State<HoverContactsCardItem> {
                   ])
                 : null,
             border: Border.all(
-              width: isHovered == false ? 4 : 2,
-              color:
-                  isHovered == false ? ColorsManager.blue : ColorsManager.white,
+              width: !isHovered ? 4 : 2,
+              color: !isHovered ? ColorsManager.blue : ColorsManager.white,
             ),
           ),
           child: Row(
@@ -97,9 +94,8 @@ class _HoverContactsCardItemState extends State<HoverContactsCardItem> {
                   decoration: BoxDecoration(
                       border: Border(
                           left: BorderSide(
-                    color: isHovered == false
-                        ? ColorsManager.blue
-                        : ColorsManager.white,
+                    color:
+                        !isHovered ? ColorsManager.blue : ColorsManager.white,
                     width: 4,
                   ))),
                   child: ImageIcon(

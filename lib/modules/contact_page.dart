@@ -40,7 +40,7 @@ class ContactPage extends StatelessWidget {
               ),
               FadeInLeft(
                 duration: const Duration(milliseconds: 1500),
-                child: Wrap(
+                child: const Wrap(
                   direction: Axis.horizontal,
                   spacing: Distance.d20,
                   runSpacing: Distance.d10,
@@ -48,23 +48,17 @@ class ContactPage extends StatelessWidget {
                     HoverContactsCardItem(
                       index: 0,
                       contactName: AppString.email,
-                      context: context,
-                      img: const AssetImage(
-                          'assets/images/icons8-gmail-100.png'),
+                      img: AssetImage('assets/images/icons8-gmail-100.png'),
                     ),
                     HoverContactsCardItem(
                       index: 1,
                       contactName: AppString.phone,
-                      context: context,
-                      img: const AssetImage(
-                          'assets/images/icons8-whatsapp-64.png'),
+                      img: AssetImage('assets/images/icons8-whatsapp-64.png'),
                     ),
                     HoverContactsCardItem(
                       index: 2,
                       contactName: AppString.github,
-                      context: context,
-                      img: const AssetImage(
-                          'assets/images/icons8-github-100.png'),
+                      img: AssetImage('assets/images/icons8-github-100.png'),
                     ),
                   ],
                 ),
