@@ -23,7 +23,6 @@ class _PortfolioLayoutState extends State<PortfolioLayout> {
   ];
   double selectedindex = 0;
   static ScrollController scrollController = ScrollController();
-
   @override
   void initState() {
     super.initState();
@@ -38,7 +37,7 @@ class _PortfolioLayoutState extends State<PortfolioLayout> {
 
   void scrolToTap(double index) {
     if (index == 3) {
-      scrollController.animateTo(index * 1500,
+      scrollController.animateTo(index * 1700,
           duration: const Duration(milliseconds: 500),
           curve: Curves.decelerate);
     } else {
@@ -53,8 +52,8 @@ class _PortfolioLayoutState extends State<PortfolioLayout> {
     double index = 0;
 
     for (double i = 0; i < listIcons.length; i++) {
-      double startOffset = i * (i == 3 ? 1500 : 1000.0);
-      double endOffset = (i + 1) * (i == 2 || i == 3 ? 1500 : 1000.0);
+      double startOffset = i * (i == 3 ? 1700 : 1000.0);
+      double endOffset = (i + 1) * (i == 2 || i == 3 ? 1700 : 1000.0);
 
       if (scrollOffset >= startOffset && scrollOffset < endOffset) {
         index = i;
@@ -78,10 +77,9 @@ class _PortfolioLayoutState extends State<PortfolioLayout> {
   @override
   Widget build(BuildContext context) {
     final width = MediaQuery.of(context).size.width;
-
     return Scaffold(
       body: Container(
-        height: MediaQuery.of(context).size.height,
+        // height: MediaQuery.of(context).size.height,
         decoration: const BoxDecoration(
           gradient: LinearGradient(
             begin: Alignment.topLeft,
@@ -92,7 +90,7 @@ class _PortfolioLayoutState extends State<PortfolioLayout> {
             ],
           ),
         ),
-        child: width >= 800
+        child: width >= 700
             ? Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,

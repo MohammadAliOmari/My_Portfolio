@@ -18,7 +18,7 @@ class ContactPage extends StatelessWidget {
   Widget build(BuildContext context) {
     final width = MediaQuery.of(context).size.width;
     return SizedBox(
-      height: 1000,
+      height: MediaQuery.of(context).size.height,
       child: Scaffold(
         backgroundColor: ColorsManager.grey.withOpacity(0),
         body: Padding(
@@ -115,7 +115,7 @@ class ContactPage extends StatelessWidget {
                       top: BorderSide(color: ColorsManager.blue, width: 3)),
                 ),
                 child: Text(
-                  'DEVELOPED BY MOHAMAD AL-OMARI © COPYRIGHT 2024',
+                  'DEVELOPED BY MOHAMAD OMARI © COPYRIGHT 2024',
                   textAlign: TextAlign.center,
                   style: TextStyle(
                       fontSize: width > 640 ? width * 0.01 : width * 0.03,
