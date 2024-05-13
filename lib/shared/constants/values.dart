@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class AppString {
-  static const String name = "Mohammad AlOmari ";
+  static const String name = "Mohamad Ali Omari ";
   static const String im = "I'M";
   static const String skills = "< Skills !>";
   static const String position = "Mobile Developer";
@@ -10,7 +10,7 @@ class AppString {
       "Recent Computer Science Graduate From Al-Albayt University , I work in  Mobile-Development, And I have experience in dealing with programming and modern mobile technologies,And I have built a lot of projects that have increased my experience and trained me a lot,I'm a fast learner and always love to develop myself .";
   static const String projects = "< Projects !>";
   static const String contact = "< Contacts !>";
-  static const String email = "mohamadomari.2546@gmail.com";
+  static const String email = "mmohamadalizakariaomari@gmail.com";
   static const String phone = "+962797466240";
   static const String github = "MohammadAliOmari";
   static const String githubLink = "https://github.com/MohammadAliOmari";

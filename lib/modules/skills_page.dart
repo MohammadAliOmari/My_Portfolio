@@ -49,18 +49,6 @@ class SkillPage extends StatelessWidget {
                             'assets/images/icons8-flutter-100.png'),
                       ),
                       HoverSkillCardItem(
-                        skillName: 'PHP',
-                        context: context,
-                        img: const AssetImage(
-                            'assets/images/icons8-php-100.png'),
-                      ),
-                      HoverSkillCardItem(
-                        skillName: 'MYSQL',
-                        context: context,
-                        img: const AssetImage(
-                            'assets/images/icons8-mysql-100.png'),
-                      ),
-                      HoverSkillCardItem(
                         skillName: 'Dart',
                         context: context,
                         img: const AssetImage(
@@ -71,6 +59,12 @@ class SkillPage extends StatelessWidget {
                         context: context,
                         img:
                             const AssetImage('assets/images/icons8-api-67.png'),
+                      ),
+                      HoverSkillCardItem(
+                        skillName: 'MYSQL',
+                        context: context,
+                        img: const AssetImage(
+                            'assets/images/icons8-mysql-100.png'),
                       ),
                       HoverSkillCardItem(
                         skillName: 'Postman',

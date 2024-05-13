@@ -54,7 +54,7 @@ class _HoverSideBarItemState extends State<HoverSideBarItem> {
             shape: BoxShape.circle,
             color: widget.selectedindex == widget.index || isHovered
                 ? ColorsManager.black.withBlue(50)
-                : null,
+                : ColorsManager.darkblue,
           ),
           alignment: Alignment.center,
           margin: const EdgeInsets.all(Distance.d10),

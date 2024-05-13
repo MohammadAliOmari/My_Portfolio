@@ -99,11 +99,11 @@ class _PortfolioLayoutState extends State<PortfolioLayout> {
                       padding: const EdgeInsets.only(
                           left: Distance.d10, right: Distance.d10),
                       child: Container(
+                        padding: const EdgeInsets.only(top: 10),
                         decoration: BoxDecoration(
-                          border: Border.all(color: ColorsManager.darkblue),
-                          borderRadius: BorderRadius.circular(Distance.d50),
-                          color: ColorsManager.grey.withOpacity(0),
-                        ),
+                            border: Border.all(color: ColorsManager.blue),
+                            borderRadius: BorderRadius.circular(Distance.d50),
+                            color: ColorsManager.black.withBlue(30)),
                         alignment: Alignment.center,
                         height: 340,
                         width: 100,
@@ -140,10 +140,9 @@ class _PortfolioLayoutState extends State<PortfolioLayout> {
                 children: [
                   Container(
                     decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(Distance.d50),
-                      color: ColorsManager.white.withOpacity(0),
-                      border: Border.all(color: ColorsManager.darkblue),
-                    ),
+                        border: Border.all(color: ColorsManager.blue),
+                        borderRadius: BorderRadius.circular(Distance.d50),
+                        color: ColorsManager.black.withBlue(30)),
                     height: 70,
                     margin: const EdgeInsets.symmetric(
                       vertical: Distance.d10,

@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(useMaterial3: false),
       title: "Mohamad'Omari",
       debugShowCheckedModeBanner: false,
-      home: PortfolioLayout(),
+      home: const PortfolioLayout(),
     );
   }
 }

@@ -107,22 +107,22 @@ class ContactPage extends StatelessWidget {
                   ],
                 ),
               ),
-              Container(
-                padding: const EdgeInsets.only(top: Distance.d10),
-                width: MediaQuery.of(context).size.width,
-                decoration: const BoxDecoration(
-                  border: Border(
-                      top: BorderSide(color: ColorsManager.blue, width: 3)),
-                ),
-                child: Text(
-                  'DEVELOPED BY MOHAMAD OMARI © COPYRIGHT 2024',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                      fontSize: width > 640 ? width * 0.01 : width * 0.03,
-                      color: ColorsManager.white),
-                ),
-              ),
             ],
+          ),
+        ),
+        bottomNavigationBar: Container(
+          padding: const EdgeInsets.only(top: Distance.d10),
+          width: MediaQuery.of(context).size.width,
+          decoration: const BoxDecoration(
+            border:
+                Border(top: BorderSide(color: ColorsManager.blue, width: 3)),
+          ),
+          child: Text(
+            'DEVELOPED BY MOHAMAD OMARI © COPYRIGHT 2024',
+            textAlign: TextAlign.center,
+            style: TextStyle(
+                fontSize: width > 640 ? width * 0.01 : width * 0.03,
+                color: ColorsManager.white),
           ),
         ),
       ),

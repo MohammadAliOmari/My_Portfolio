@@ -31,7 +31,8 @@ class _ProjectCardState extends State<ProjectCard> {
     final width = MediaQuery.of(context).size.width;
 
     List<Uri> codeUrlList = [
-      Uri.parse('https://github.com/MohammadAliOmari/project-manager'),
+      Uri.parse(
+          'https://github.com/MohammadAliOmari/Graduation-project-management-system'),
       Uri.parse('https://github.com/MohammadAliOmari/Shop_App'),
       Uri.parse('https://github.com/MohammadAliOmari/News-App'),
       Uri.parse('https://github.com/MohammadAliOmari/Weather-App'),
@@ -40,9 +41,9 @@ class _ProjectCardState extends State<ProjectCard> {
       Uri.parse('https://github.com/MohammadAliOmari/bmi_calculator'),
     ];
     List<Uri> demoList = [
-      Uri.parse('https://github.com/MohammadAliOmari/project-manager'),
-      Uri.parse('https://github.com/MohammadAliOmari/Shop_App'),
-      Uri.parse('https://github.com/MohammadAliOmari/News-App'),
+      Uri.parse(''),
+      Uri.parse(''),
+      Uri.parse(''),
       Uri.parse('https://moh-weatherapp.netlify.app'),
       Uri.parse('https://moquizapp.netlify.app/'),
       Uri.parse('https://mohamadtodolist.netlify.app'),
@@ -55,9 +56,7 @@ class _ProjectCardState extends State<ProjectCard> {
     }
 
     Future launchUrl2() async {
-      if (widget.index1 == 0) {
-        return null;
-      } else if (!await launchUrl(demoList[widget.index1])) {
+      if (!await launchUrl(demoList[widget.index1])) {
         throw Exception('Could not launch $demoList');
       }
     }
