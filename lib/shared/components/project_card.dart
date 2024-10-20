@@ -33,6 +33,7 @@ class _ProjectCardState extends State<ProjectCard> {
     List<Uri> codeUrlList = [
       Uri.parse(
           'https://github.com/MohammadAliOmari/Graduation-project-management-system'),
+      Uri.parse('https://github.com/MohammadAliOmari/Bookly_App_Clean_Arch'),
       Uri.parse('https://github.com/MohammadAliOmari/Shop_App'),
       Uri.parse('https://github.com/MohammadAliOmari/News-App'),
       Uri.parse('https://github.com/MohammadAliOmari/Weather-App'),
@@ -41,6 +42,7 @@ class _ProjectCardState extends State<ProjectCard> {
       Uri.parse('https://github.com/MohammadAliOmari/bmi_calculator'),
     ];
     List<Uri> demoList = [
+      Uri.parse(''),
       Uri.parse(''),
       Uri.parse(''),
       Uri.parse(''),
@@ -61,7 +63,7 @@ class _ProjectCardState extends State<ProjectCard> {
       }
     }
 
-    final bool isWeb = width > 600;
+    final bool isWeb = width > 450;
 
     return Column(
       mainAxisAlignment: MainAxisAlignment.start,
@@ -73,7 +75,7 @@ class _ProjectCardState extends State<ProjectCard> {
             borderRadius: BorderRadius.all(Radius.circular(30)),
             color: ColorsManager.cardcolor,
           ),
-          width: isWeb ? width / 2.5 : width,
+          width: isWeb ? width / 2.7 : width,
           child: Column(mainAxisAlignment: MainAxisAlignment.start, children: [
             CarouselSlider.builder(
                 itemCount: widget.image[widget.index1].length,
@@ -134,7 +136,10 @@ class _ProjectCardState extends State<ProjectCard> {
                 const SizedBox(
                   width: Distance.d20,
                 ),
-                widget.index1 == 0 || widget.index1 == 1 || widget.index1 == 2
+                widget.index1 == 0 ||
+                        widget.index1 == 1 ||
+                        widget.index1 == 2 ||
+                        widget.index1 == 3
                     ? const SizedBox.shrink()
                     : ProjectButton(
                         launchUrl: launchUrl2,

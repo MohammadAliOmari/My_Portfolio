@@ -39,11 +39,13 @@ class _HoverContactsCardItemState extends State<HoverContactsCardItem> {
     AppString.email,
     AppString.phone,
     AppString.githubLink,
+    AppString.linkedinlink,
   ];
   List<Uri> listofurl = [
     Uri.parse('mailto:${AppString.email}'),
     Uri.parse('https://wa.me/0797466240'),
     Uri.parse(AppString.githubLink),
+    Uri.parse(AppString.linkedinlink),
   ];
 
   @override

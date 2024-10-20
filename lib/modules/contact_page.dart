@@ -18,7 +18,7 @@ class ContactPage extends StatelessWidget {
   Widget build(BuildContext context) {
     final width = MediaQuery.of(context).size.width;
     return SizedBox(
-      height: MediaQuery.of(context).size.height,
+      height: 1000,
       child: Scaffold(
         backgroundColor: ColorsManager.grey.withOpacity(0),
         body: Padding(
@@ -59,6 +59,11 @@ class ContactPage extends StatelessWidget {
                       index: 2,
                       contactName: AppString.github,
                       img: AssetImage('assets/images/icons8-github-100.png'),
+                    ),
+                    HoverContactsCardItem(
+                      index: 3,
+                      contactName: AppString.linkedin,
+                      img: AssetImage('assets/images/icons8-linkedin.png'),
                     ),
                   ],
                 ),

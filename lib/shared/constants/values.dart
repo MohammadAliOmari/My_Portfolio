@@ -14,7 +14,9 @@ class AppString {
   static const String phone = "+962797466240";
   static const String github = "MohammadAliOmari";
   static const String githubLink = "https://github.com/MohammadAliOmari";
-  static const String linkdin = "Mohamad Omari";
+  static const String linkedin = "Mohamad Omari";
+  static const String linkedinlink =
+      "https://www.linkedin.com/in/mohamad-omari-94252b1a9/";
 }
 
 class FontSizeManager {

@@ -37,7 +37,7 @@ class _PortfolioLayoutState extends State<PortfolioLayout> {
 
   void scrolToTap(double index) {
     if (index == 3) {
-      scrollController.animateTo(index * 1700,
+      scrollController.animateTo(index * 1830,
           duration: const Duration(milliseconds: 500),
           curve: Curves.decelerate);
     } else {
@@ -52,8 +52,8 @@ class _PortfolioLayoutState extends State<PortfolioLayout> {
     double index = 0;
 
     for (double i = 0; i < listIcons.length; i++) {
-      double startOffset = i * (i == 3 ? 1700 : 1000.0);
-      double endOffset = (i + 1) * (i == 2 || i == 3 ? 1700 : 1000.0);
+      double startOffset = i * (i == 3 ? 1830 : 1000.0);
+      double endOffset = (i + 1) * (i == 2 || i == 3 ? 1830 : 1000.0);
 
       if (scrollOffset >= startOffset && scrollOffset < endOffset) {
         index = i;
@@ -90,7 +90,7 @@ class _PortfolioLayoutState extends State<PortfolioLayout> {
             ],
           ),
         ),
-        child: width >= 700
+        child: width >= 650
             ? Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
@@ -136,6 +136,7 @@ class _PortfolioLayoutState extends State<PortfolioLayout> {
                   ])
             : Column(
                 mainAxisAlignment: MainAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.start,
                 mainAxisSize: MainAxisSize.max,
                 children: [
                   Container(

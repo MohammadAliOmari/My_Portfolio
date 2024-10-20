@@ -13,6 +13,7 @@ class ProjectPage extends StatelessWidget {
     // ScrollController controllers = ScrollController();
     final List<String> texts = [
       'Graduation project management system',
+      'Bookly App',
       'Shop App',
       'News App',
       'Weather App',
@@ -36,6 +37,10 @@ class ProjectPage extends StatelessWidget {
         'assets/images/admin3.jpg',
         'assets/images/student.jpg',
         'assets/images/doctor.jpg',
+      ],
+      [
+        'assets/images/splash_screen.jpg',
+        'assets/images/home_screen.jpg',
       ],
       [
         'assets/images/onboarding.jpg',
@@ -79,11 +84,11 @@ class ProjectPage extends StatelessWidget {
     // }
 
     return SizedBox(
-      height: 3100,
+      height: 3600,
       child: Scaffold(
           backgroundColor: ColorsManager.grey.withOpacity(0),
           body: Padding(
-            padding: EdgeInsets.all(isWeb ? Distance.d40 : 10),
+            padding: EdgeInsets.all(10),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.center,
@@ -110,6 +115,7 @@ class ProjectPage extends StatelessWidget {
                       ProjectCard(index1: 4, text: texts[4], image: img),
                       ProjectCard(index1: 5, text: texts[5], image: img),
                       ProjectCard(index1: 6, text: texts[6], image: img),
+                      ProjectCard(index1: 7, text: texts[7], image: img),
                     ],
                   ),
                 ),
